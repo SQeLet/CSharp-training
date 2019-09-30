@@ -8,33 +8,44 @@ namespace pryzhok
 {
     public class Prygun
     {
-        int Worstjump;
-		int Bestjump;
+        double Worstjump; 
+		double Bestjump;
+        
 
-
-        public void SetWorstjump(int len)
+        public void SetWorstjump(double len)
         {
             Worstjump = len;
         }
 
-        public int GetWorstjump()
+        public double GetWorstjump()
+        
         {
             return Worstjump;
 
         }
 
-        public void SetBestjump(int len2)
+        public void SetBestjump(double len2)
         {
             Bestjump = len2;
         }
-        public int GetBestjump()
+
+        public double GetBestjump()
         {
             return Bestjump;
         }
+
         public double Average()
         {
-		     return (Worstjump + Bestjump) / 2.0;
-
+		     return Math.Round((Worstjump + Bestjump) / 2 ,3);
+                
         }
+        
+        public double Record (double a)
+        {
+            return a - Bestjump;
+        }
+
+  
     }
 }
+
