@@ -33,16 +33,20 @@ namespace Jumper
 
 		private void Count_Click(object sender, RoutedEventArgs e)
 		{
-			int worst = Convert.ToInt32(TBw.Text);
-			int best = Convert.ToInt32(TBb.Text);
+			double worst = Convert.ToDouble(TBw.Text);
+			double best = Convert.ToDouble(TBb.Text);
 
 			if (worst <= best)
 			{
-				jump.SetWorstjump(Convert.ToInt32(TBw.Text));
-				jump.SetBestjump(Convert.ToInt32(TBb.Text));
-				Lavg.Content = "Средний прыжок: " + jump.Average();
-				ErrorMessage.Content = "";
-			}
+				jump.SetWorstjump(Convert.ToDouble(TBw.Text));
+                jump.SetBestjump(Convert.ToDouble(TBb.Text));
+                Lavg.Content = "Средний прыжок: " + jump.Average();
+                Lrec.Content = "Не хватило до рекорда: " + jump.Record(Convert.ToDouble(TBr.Text)); 
+
+
+                ErrorMessage.Content = "";
+
+            }
 
 			else
 			{
