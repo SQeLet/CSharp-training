@@ -1,0 +1,37 @@
+<Window x:Class="Sportprygun.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                       
+        Height="500" Width="1100" BorderBrush="#FF041168" Background="#FFCDD0EA" Foreground="{x:Null}">
+    <Grid   Width="370">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40*"/>
+            <RowDefinition Height="81*"/>
+
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="StartBut" Content="СТАРТ" Margin="29,40,-29.4,49" Background="#FF95DA6A" FontWeight="Bold" FontSize="16" />
+        <Label x:Name="NumLab" Content="Количество спортсменов:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="-335,50,0,0" Width="194" FontSize="14" FontWeight="Bold" Height="29"/>
+        <TextBox x:Name="NumBox" HorizontalAlignment="Left" Height="37" VerticalAlignment="Top" Width="94" Margin="-134,46,0,0" BorderThickness="4" />
+        <Label x:Name="RecLab" Content="Рекорд:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="81.4,58,-305.4,0" Width="224" FontSize="14" FontWeight="Bold" Grid.Column="1" Height="29"/>
+        <DataGrid x:Name="TabGrid" HorizontalAlignment="Left" Height="289" VerticalAlignment="Top" Margin="-345,10,0,0" FrozenColumnCount="9" Background="#FFE7B5DC" Width="647" Grid.Row="1">
+            <DataGrid.Columns>
+                <DataGridTextColumn  Header="№ п/п"/>
+                <DataGridTextColumn  Header="1 Прыжок"/>
+                <DataGridTextColumn Header="2 Прыжок"/>
+                <DataGridTextColumn Header="3 Прыжок"/>
+                <DataGridTextColumn Header="4 Прыжок"/>
+                <DataGridTextColumn Header="5 Прыжок"/>
+                <DataGridTextColumn Header="6 Прыжок"/>
+                <DataGridTextColumn Header="Худший прыжок"/>
+                <DataGridTextColumn Header="Хучший прыжок"/>
+
+            </DataGrid.Columns>
+
+        </DataGrid>
+    </Grid>
+</Window>
