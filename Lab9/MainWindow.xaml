@@ -1,0 +1,19 @@
+<Window x:Class="Lab9.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab9"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="#FF8FECA0">
+        <Label Content="ПРЫГУН" HorizontalAlignment="Left" Margin="348,0,0,0" VerticalAlignment="Top" Height="43" Width="183" FontWeight="Bold" FontSize="20"/>
+        <Label Content="Рекорд:" HorizontalAlignment="Left" Margin="47,53,0,0" VerticalAlignment="Top" Width="62" FontSize="14"/>
+        <TextBox x:Name="LRec" HorizontalAlignment="Left" Height="34" Margin="109,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="62" RenderTransformOrigin="0.652,-0.268" />
+        <Button x:Name="Calc" Content="ОТОБРАЗИТЬ" HorizontalAlignment="Left" Margin="316,48,0,0" VerticalAlignment="Top" Width="148" Height="48" FontWeight="Bold" FontSize="14" Click="Calc_Click"/>
+        <ScrollViewer HorizontalAlignment="Left" Height="296" Margin="23,101,0,0" VerticalAlignment="Top" Width="732">
+            <Label x:Name="LTable" Content="" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </ScrollViewer>
+
+    </Grid>
+</Window>
