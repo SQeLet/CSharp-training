@@ -1,0 +1,16 @@
+<Window x:Class="Captcha.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Captcha"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Label x:Name="Captcha" Content="" HorizontalAlignment="Left" Margin="225,23,0,0" VerticalAlignment="Top" Height="79" Width="372" FontFamily="Gill Sans Ultra Bold" FontSize="36"/>
+        <Button x:Name="GenButt" Content="GENERATE" HorizontalAlignment="Left" Margin="43,32,0,0" VerticalAlignment="Top" Width="156" Height="60" FontSize="22" FontWeight="Bold" Click="GenButt_Click"/>
+        <TextBox x:Name="TbUser" HorizontalAlignment="Left" Height="43" Margin="43,139,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="123" FontSize="18"/>
+        <Button x:Name="VerButt" Content="Verify" HorizontalAlignment="Left" Margin="206,139,0,0" VerticalAlignment="Top" Width="113" Height="43" FontSize="16" Click="VerButt_Click"/>
+
+    </Grid>
+</Window>
