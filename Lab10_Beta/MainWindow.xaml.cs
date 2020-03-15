@@ -24,7 +24,7 @@ namespace Lab10
 		int c = 0;
 		public MainWindow()
 		{
-			InitializeComponent();
+		    InitializeComponent();
 
 			Name1.Visibility = Visibility.Hidden;
 			Name2.Visibility = Visibility.Hidden;
@@ -78,6 +78,12 @@ namespace Lab10
 			J75.Visibility = Visibility.Hidden;
 			J76.Visibility = Visibility.Hidden;
 
+		}
+
+		private void ClearButt_Click(object sender, RoutedEventArgs e)
+		{
+			LRes.Content = "";
+			LName.Content = "";
 		}
 
 		private void AddButt_Click(object sender, RoutedEventArgs e)
@@ -177,12 +183,6 @@ namespace Lab10
 
 		}
 
-		private void ClearButt_Click(object sender, RoutedEventArgs e)
-		{
-			//тут будет метод полной очистки
-
-		}
-
 		private void Calc_Click(object sender, RoutedEventArgs e)
 		{
 			Jump jmp = new Jump();
@@ -226,10 +226,9 @@ namespace Lab10
 			}
 
 			if ((J21.Text == "") | (J22.Text == "") | (J23.Text == "") | (J24.Text == "") | (J25.Text == "") | (J26.Text == ""))
-				//	Environment.Exit(0);
 				goto E;
-			
 
+			
 
 			max = 0;
 			min = 20000;
@@ -256,7 +255,12 @@ namespace Lab10
 
 									LName.Content += "      " + jmper.GetName() + "\n";
 									LRes.Content += "   " + jmper.Arr[0] + "                " + jmper.Arr[1] + "                  " + jmper.Arr[2] + "                 " + jmper.Arr[3] + "                   " + jmper.Arr[4] + "                  " + jmper.Arr[5]+ "                        " + max + "                " + min + "\n";
-			/*max = 0;
+
+			if ((J31.Text == "") | (J32.Text == "") | (J33.Text == "") | (J34.Text == "") | (J35.Text == "") | (J36.Text == ""))
+				goto E;
+
+
+			max = 0;
 			min = 20000;
 
 
@@ -282,6 +286,11 @@ namespace Lab10
 
 												LName.Content += "      " + jmper.GetName() + "\n";
 												LRes.Content += "   " + jmper.Arr[0] + "                " + jmper.Arr[1] + "                  " + jmper.Arr[2] + "                 " + jmper.Arr[3] + "                   " + jmper.Arr[4] + "                  " + jmper.Arr[5] + "                        " + max + "                " + min + "\n";
+
+
+			if ((J41.Text == "") | (J42.Text == "") | (J43.Text == "") | (J44.Text == "") | (J45.Text == "") | (J46.Text == ""))
+				goto E;
+
 
 			max = 0;
 			min = 20000;
@@ -311,6 +320,8 @@ namespace Lab10
 												LName.Content += "      " + jmper.GetName() + "\n";
 												LRes.Content += "   " + jmper.Arr[0] + "                " + jmper.Arr[1] + "                  " + jmper.Arr[2] + "                 " + jmper.Arr[3] + "                   " + jmper.Arr[4] + "                  " + jmper.Arr[5] + "                        " + max + "                " + min + "\n";
 
+			if ((J51.Text == "") | (J52.Text == "") | (J53.Text == "") | (J54.Text == "") | (J55.Text == "") | (J56.Text == ""))
+				goto E;
 
 			max = 0;
 			min = 20000;
@@ -341,6 +352,10 @@ namespace Lab10
 													LName.Content += "      " + jmper.GetName() + "\n";
 													LRes.Content += "   " + jmper.Arr[0] + "                " + jmper.Arr[1] + "                  " + jmper.Arr[2] + "                 " + jmper.Arr[3] + "                   " + jmper.Arr[4] + "                  " + jmper.Arr[5] + "                        " + max + "                " + min + "\n";
 
+			if ((J61.Text == "") | (J62.Text == "") | (J63.Text == "") | (J64.Text == "") | (J65.Text == "") | (J66.Text == ""))
+				goto E;
+
+
 			max = 0;
 			min = 20000;
 
@@ -368,7 +383,7 @@ namespace Lab10
 												LRes.Content += "   " + jmper.Arr[0] + "                " + jmper.Arr[1] + "                  " + jmper.Arr[2] + "                 " + jmper.Arr[3] + "                   " + jmper.Arr[4] + "                  " + jmper.Arr[5] + "                        " + max + "                " + min + "\n";
 
 	
-	*/
+	
 
 
 
