@@ -78,7 +78,7 @@ namespace PellNumber
 			rtg[0].Width = 5;
 			rtg[0].Fill = Brushes.Green;
 			double lth = interval.Ticks;
-			rtg[0].Height = lth / 100;
+			rtg[0].Height = lth / 10000;
 			Graph.Children.Add(rtg[0]);
 			Thickness pos = new Thickness(19, 37, 0, 0);
 			rtg[0].Margin = pos;
@@ -97,7 +97,7 @@ namespace PellNumber
 			rtg[1].Width = 5;
 			rtg[1].Fill = Brushes.Green;
 			double lth = interval.Ticks;
-			rtg[1].Height = lth/100;
+			rtg[1].Height = lth / 10000;
 			Graph.Children.Add(rtg[1]);
 			Thickness pos = new Thickness(-7, 37, 0, 0);
 			rtg[1].Margin = pos;
